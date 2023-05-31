@@ -1,0 +1,30 @@
+
+<h3>This pizza is a {{name}}</h3>
+  {{#if price}}
+        <h2>Price {{price}}€ </h2>
+    {{else}}
+        <h2>Price upon request</h2>
+    {{/if}}
+
+    <hr />
+
+    <div>
+        <h2>Ingredients</h2>
+        
+        <ul>
+            {{#each ingredients}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+    </div>
+    
+<h4>Recommended drink: {{recommendedDrink}}</h4>
+<img src="{{image}}" alt="{{name}}">
+
+
+
+{{> ctaOrderNow}}
+
+
+
